@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Huangify WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Huangify.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>B3858F341A703A4700304471</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3AB6AE31A76F7B20098E363</key>
 		<dict>
 			<key>primary</key>
 			<true/>

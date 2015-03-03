@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="Huangify" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,166 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xr1-bI-F2d" customClass="FUIButton">
+                                <rect key="frame" x="245" y="238" width="110" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Oat-Uu-1dD"/>
+                                </constraints>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5nC-eD-MbJ" kind="show" id="cug-9p-cCI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xr1-bI-F2d" secondAttribute="bottom" constant="326" id="SEi-Xf-dej"/>
+                            <constraint firstItem="xr1-bI-F2d" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ddv-Ig-Brx"/>
+                            <constraint firstItem="xr1-bI-F2d" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="218" id="gc8-C3-ISx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="xr1-bI-F2d" id="Kyf-aO-wZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Overlay Picker View Controller-->
+        <scene sceneID="e5J-S1-tHF">
+            <objects>
+                <viewController id="MVm-c1-MB1" customClass="OverlayPickerViewController" customModule="Huangify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xiO-GQ-wp4"/>
+                        <viewControllerLayoutGuide type="bottom" id="VPC-c1-jxs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="APg-hO-S5E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uSN-d7-Avt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Overlays" id="uB9-kg-627">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="lvf-MS-954"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhH-un-jll" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317" y="1348"/>
+        </scene>
+        <!--Canvas View Controller-->
+        <scene sceneID="Xgd-In-s07">
+            <objects>
+                <viewController id="5nC-eD-MbJ" customClass="CanvasViewController" customModule="Huangify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xdj-Hd-ZXT"/>
+                        <viewControllerLayoutGuide type="bottom" id="BcP-8s-0am"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MeZ-3x-aiK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z89-oD-E3D">
+                                <rect key="frame" x="0.0" y="20" width="600" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Z-vI-kNq" customClass="FUIButton">
+                                        <rect key="frame" x="283" y="11" width="34" height="30"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveImage:" destination="vQa-cc-XLN" eventType="touchUpInside" id="BOs-j4-BJ2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="z0Z-vI-kNq" firstAttribute="bottom" secondItem="z89-oD-E3D" secondAttribute="bottomMargin" id="AYR-8O-tjC"/>
+                                    <constraint firstItem="z0Z-vI-kNq" firstAttribute="centerX" secondItem="z89-oD-E3D" secondAttribute="centerX" id="gqp-z0-bGo"/>
+                                    <constraint firstItem="z0Z-vI-kNq" firstAttribute="top" secondItem="z89-oD-E3D" secondAttribute="top" constant="11" id="v4Q-N2-ry0"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CTU-Kp-9aw">
+                                <rect key="frame" x="0.0" y="67" width="600" height="484"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YtS-bp-b1D">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ed1-W9-RCb" customClass="FUIButton">
+                                        <rect key="frame" x="258" y="11" width="85" height="30"/>
+                                        <state key="normal" title="Add Overlay">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="MVm-c1-MB1" kind="presentation" id="XP2-0h-YhM"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJP-ig-wCF">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVm-E4-oZn">
+                                                <rect key="frame" x="250" y="8" width="100" height="30"/>
+                                                <state key="normal" title="Delete Overlay">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveImage:" destination="vQa-cc-XLN" eventType="touchUpInside" id="1Vb-di-AX8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="NVm-E4-oZn" firstAttribute="centerX" secondItem="gJP-ig-wCF" secondAttribute="centerX" id="DFJ-BM-tny"/>
+                                            <constraint firstItem="NVm-E4-oZn" firstAttribute="top" secondItem="gJP-ig-wCF" secondAttribute="topMargin" id="eJR-Ha-GvE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ed1-W9-RCb" firstAttribute="bottom" secondItem="YtS-bp-b1D" secondAttribute="bottomMargin" id="6zB-SR-8aU"/>
+                                    <constraint firstItem="gJP-ig-wCF" firstAttribute="top" secondItem="YtS-bp-b1D" secondAttribute="top" id="8pr-sh-PxG"/>
+                                    <constraint firstItem="Ed1-W9-RCb" firstAttribute="centerX" secondItem="gJP-ig-wCF" secondAttribute="centerX" id="Gyt-2P-uLJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="gJP-ig-wCF" secondAttribute="bottom" id="Ywt-wM-Gq8"/>
+                                    <constraint firstAttribute="trailing" secondItem="gJP-ig-wCF" secondAttribute="trailing" id="ojY-Ug-KZj"/>
+                                    <constraint firstItem="Ed1-W9-RCb" firstAttribute="top" secondItem="YtS-bp-b1D" secondAttribute="top" constant="11" id="qhF-Z7-ymI"/>
+                                    <constraint firstItem="gJP-ig-wCF" firstAttribute="leading" secondItem="YtS-bp-b1D" secondAttribute="leading" id="r6J-Zi-SFF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z89-oD-E3D" firstAttribute="trailing" secondItem="CTU-Kp-9aw" secondAttribute="trailing" id="DNp-q2-fa6"/>
+                            <constraint firstItem="CTU-Kp-9aw" firstAttribute="leading" secondItem="MeZ-3x-aiK" secondAttribute="leading" id="HxD-of-rJq"/>
+                            <constraint firstItem="CTU-Kp-9aw" firstAttribute="trailing" secondItem="YtS-bp-b1D" secondAttribute="trailing" id="KPA-de-pzV"/>
+                            <constraint firstItem="YtS-bp-b1D" firstAttribute="leading" secondItem="CTU-Kp-9aw" secondAttribute="leading" id="SeM-24-OZJ"/>
+                            <constraint firstAttribute="trailing" secondItem="z89-oD-E3D" secondAttribute="trailing" id="a3W-Mp-sPX"/>
+                            <constraint firstItem="z89-oD-E3D" firstAttribute="leading" secondItem="CTU-Kp-9aw" secondAttribute="leading" id="bOp-3V-VxD"/>
+                            <constraint firstItem="YtS-bp-b1D" firstAttribute="bottom" secondItem="BcP-8s-0am" secondAttribute="top" id="c2a-Le-NOF"/>
+                            <constraint firstItem="z89-oD-E3D" firstAttribute="top" secondItem="xdj-Hd-ZXT" secondAttribute="bottom" id="lgl-Ri-0hh"/>
+                            <constraint firstItem="YtS-bp-b1D" firstAttribute="top" secondItem="CTU-Kp-9aw" secondAttribute="bottom" id="rE1-Ej-unv"/>
+                            <constraint firstItem="CTU-Kp-9aw" firstAttribute="top" secondItem="xdj-Hd-ZXT" secondAttribute="bottom" constant="47" id="y1B-Ak-cYV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addOverlayButton" destination="Ed1-W9-RCb" id="ge4-7U-sSl"/>
+                        <outlet property="noSelectionView" destination="YtS-bp-b1D" id="EyR-US-GbG"/>
+                        <outlet property="saveButton" destination="z0Z-vI-kNq" id="z5g-kn-qjM"/>
+                        <outlet property="selectionView" destination="gJP-ig-wCF" id="72R-dR-Shl"/>
+                        <outlet property="topView" destination="z89-oD-E3D" id="CsI-HA-FNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vQa-cc-XLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1295" y="384"/>
         </scene>
     </scenes>
 </document>

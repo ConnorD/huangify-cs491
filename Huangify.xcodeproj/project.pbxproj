@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B5A52D4F59E27B37701406 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BAE25299D148AC0BB984E8 /* libPods.a */; };
+		B352440F1A79BEC900FA0237 /* OverlayImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B352440E1A79BEC900FA0237 /* OverlayImageViewController.swift */; };
+		B35244111A79C0D400FA0237 /* OverlayPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35244101A79C0D400FA0237 /* OverlayPickerViewController.swift */; };
 		B3858F261A703A4700304471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3858F251A703A4700304471 /* AppDelegate.swift */; };
-		B3858F281A703A4700304471 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3858F271A703A4700304471 /* ViewController.swift */; };
+		B3858F281A703A4700304471 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3858F271A703A4700304471 /* FirstViewController.swift */; };
 		B3858F2B1A703A4700304471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3858F291A703A4700304471 /* Main.storyboard */; };
 		B3858F2D1A703A4700304471 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3858F2C1A703A4700304471 /* Images.xcassets */; };
 		B3858F301A703A4700304471 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3858F2E1A703A4700304471 /* LaunchScreen.xib */; };
 		B3858F3C1A703A4700304471 /* HuangifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3858F3B1A703A4700304471 /* HuangifyTests.swift */; };
+		B3858F461A703B1800304471 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3858F451A703B1800304471 /* Podfile */; };
+		B3AB6AFD1A79BA640098E363 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB6AFC1A79BA640098E363 /* CanvasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +30,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3AB6AF91A76F7B20098E363 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B20723926407DFF014E9EBFB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B352440E1A79BEC900FA0237 /* OverlayImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayImageViewController.swift; sourceTree = "<group>"; };
+		B35244101A79C0D400FA0237 /* OverlayPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPickerViewController.swift; sourceTree = "<group>"; };
 		B3858F201A703A4700304471 /* Huangify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huangify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3858F241A703A4700304471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3858F251A703A4700304471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3858F271A703A4700304471 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3858F271A703A4700304471 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B3858F2A1A703A4700304471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3858F2C1A703A4700304471 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B3858F2F1A703A4700304471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B3858F351A703A4700304471 /* HuangifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuangifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3858F3A1A703A4700304471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3858F3B1A703A4700304471 /* HuangifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuangifyTests.swift; sourceTree = "<group>"; };
+		B3858F451A703B1800304471 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3858F471A7046DC00304471 /* Huangify-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Huangify-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		B3AB6AFC1A79BA640098E363 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		D2BAE25299D148AC0BB984E8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F098447CF40C15F12AB43A17 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B5A52D4F59E27B37701406 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +83,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6648C5AECBBFD82BF0FFA326 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B20723926407DFF014E9EBFB /* Pods.debug.xcconfig */,
+				F098447CF40C15F12AB43A17 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF48945378F7274952687BD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2BAE25299D148AC0BB984E8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3858F171A703A4700304471 = {
 			isa = PBXGroup;
 			children = (
+				B3858F451A703B1800304471 /* Podfile */,
 				B3858F221A703A4700304471 /* Huangify */,
 				B3858F381A703A4700304471 /* HuangifyTests */,
 				B3858F211A703A4700304471 /* Products */,
+				6648C5AECBBFD82BF0FFA326 /* Pods */,
+				AF48945378F7274952687BD3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +124,16 @@
 		B3858F221A703A4700304471 /* Huangify */ = {
 			isa = PBXGroup;
 			children = (
+				B3858F471A7046DC00304471 /* Huangify-Bridging-Header.h */,
 				B3858F251A703A4700304471 /* AppDelegate.swift */,
-				B3858F271A703A4700304471 /* ViewController.swift */,
+				B3858F271A703A4700304471 /* FirstViewController.swift */,
 				B3858F291A703A4700304471 /* Main.storyboard */,
 				B3858F2C1A703A4700304471 /* Images.xcassets */,
 				B3858F2E1A703A4700304471 /* LaunchScreen.xib */,
 				B3858F231A703A4700304471 /* Supporting Files */,
+				B3AB6AFC1A79BA640098E363 /* CanvasViewController.swift */,
+				B352440E1A79BEC900FA0237 /* OverlayImageViewController.swift */,
+				B35244101A79C0D400FA0237 /* OverlayPickerViewController.swift */,
 			);
 			path = Huangify;
 			sourceTree = "<group>";
@@ -119,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3858F3F1A703A4700304471 /* Build configuration list for PBXNativeTarget "Huangify" */;
 			buildPhases = (
+				BB0C6F52F4D808B83D8721D2 /* Check Pods Manifest.lock */,
 				B3858F1C1A703A4700304471 /* Sources */,
 				B3858F1D1A703A4700304471 /* Frameworks */,
 				B3858F1E1A703A4700304471 /* Resources */,
+				9D4901D70DE058D992EE9B17 /* Copy Pods Resources */,
+				B3AB6AF91A76F7B20098E363 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -194,6 +248,7 @@
 			files = (
 				B3858F2B1A703A4700304471 /* Main.storyboard in Resources */,
 				B3858F301A703A4700304471 /* LaunchScreen.xib in Resources */,
+				B3858F461A703B1800304471 /* Podfile in Resources */,
 				B3858F2D1A703A4700304471 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,12 +262,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D4901D70DE058D992EE9B17 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0C6F52F4D808B83D8721D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B3858F1C1A703A4700304471 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3858F281A703A4700304471 /* ViewController.swift in Sources */,
+				B35244111A79C0D400FA0237 /* OverlayPickerViewController.swift in Sources */,
+				B3858F281A703A4700304471 /* FirstViewController.swift in Sources */,
+				B3AB6AFD1A79BA640098E363 /* CanvasViewController.swift in Sources */,
+				B352440F1A79BEC900FA0237 /* OverlayImageViewController.swift in Sources */,
 				B3858F261A703A4700304471 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,21 +425,28 @@
 		};
 		B3858F401A703A4700304471 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B20723926407DFF014E9EBFB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Huangify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Huangify-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Huangify-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		B3858F411A703A4700304471 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F098447CF40C15F12AB43A17 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Huangify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Huangify-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +503,7 @@
 				B3858F411A703A4700304471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3858F421A703A4700304471 /* Build configuration list for PBXNativeTarget "HuangifyTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +512,7 @@
 				B3858F441A703A4700304471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
